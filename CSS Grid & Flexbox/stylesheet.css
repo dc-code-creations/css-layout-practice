@@ -62,7 +62,8 @@ footer {
     grid-template-columns: .4fr .3fr .3fr;
 
     /* might not need to set row heights here; can instead set them individually in each section
-           - might be more responsive that way? */
+           - might be more responsive that way?
+           - or maybe the content in the box is what determines the height of each section? */
 
     /* grid-template-rows: .3fr 1fr .5fr .7fr 1fr .3fr; */
 
@@ -158,6 +159,11 @@ footer {
 .related-imgs .icon {
     background-color: white;
     flex: 1 1 150px;
+}
+
+.related-imgs .icon img {
+    /* this line keeps the images from extending past the width of its section */
+    max-width: 100%;
 }
 
 .related-posts {
