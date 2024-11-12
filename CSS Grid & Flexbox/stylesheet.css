@@ -61,9 +61,10 @@ footer {
     display: grid;
     grid-template-columns: .4fr .3fr .3fr;
 
-    /* might not need to set row heights here; can instead set them individually in each section
-           - might be more responsive that way?
-           - or maybe the content in the box is what determines the height of each section? */
+    /* confirmed, we DO NOT need to set specific row heights here
+            - content in the box is what determines the height of each section
+            - we can technically, but it is not necessary and will lead to some weird stretched layout problems, 
+              as a result */
 
     /* grid-template-rows: .3fr 1fr .5fr .7fr 1fr .3fr; */
 

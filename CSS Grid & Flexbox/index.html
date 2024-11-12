@@ -10,7 +10,7 @@
  
       set overall layout with grid
         - helps maintain consistency with uneven blocks in base layout
-      use flexbox to place elements within each section
+          use flexbox to place elements within each section
         - often easier than grid when placing multiple object that only need to deal with one 
           direction
         - also good at dynamically scaling elements
@@ -20,9 +20,9 @@
         <div class="container">
         
             <header class="header">
+                <div class="logo">logo</div>
                 <nav>
                   <ul>
-                    <li class="logo">logo</li>
                     <li>item 1</li>
                     <li>item 2</li>
                   </ul>
@@ -42,8 +42,14 @@
                 </ul>
             </aside>
             <section class="main">
-                <h2>main heading</h2>
-                <p>main text</p>
+                <h2>Flexbox and CSS Grid Layout</h2>
+    
+                <p>It's okay to combine CSS Grid Layout and Flexbox.</p>
+        
+                <p>Is the content in a straight line or column (cards, navigation items, or other content blocks)? For occasions that require elements to line up in one direction, meaning it is more “one-dimensional”, typically Flexbox is the better option. Also, Flexbox is good at dynamically scaling elements. Maybe you’ve tried this in a row of boxes, by adding display:flex; on a parent element and flex properties on the child elements, there’s a nice line formed and this is an efficient way to make sure they are all the same height.  </p>
+                
+                <p>**If things do not look right, make sure your browser is in "Experimental Mode".
+                </p>
             </section>
             <section class="extra">
                 <div class="extra-info-block">
