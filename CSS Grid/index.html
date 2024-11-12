@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Shop Checkout</title>
+
+    <!-- Stylesheet -->
+     <link rel="stylesheet" href="stylesheet.css">
+
+<!-- source: https://wpengine.com/resources/combine-flexbox-and-css-grids-for-layouts-how-to/
+ 
+      determining the layout
+        - can specify template areas that can be named and referenced in order to position 
+          items
+            - header section
+            - main content section
+            - sidebar
+            - footer
+        - physical layout is basically the same as Flexbox version minus the "wrapper" div
+        - define grid template areas in CSS file inside the main container you are defining 
+          the template for in the physical order and orientation you want them to appear on 
+          the page
+            - in this case, it's basically the whole page but could be for a smaller subset 
+              of the page if you wanted
+            - done in the "container" class using "grid-template-area"
+            - must also set "display" to "grid"
+            - declare "grid-template-columns" to set overall structure of page
+        - sections of the template need to be manually connected to each section they are 
+          referring to via each section's respective selectors in the CSS file
+            - use "grid-area" & "grid-template-columns" and/or "grid-template-rows" as needed
+            - "1fr" is a "fractional unit"; used similarly to the "flex: 1" property (i.e. the 
+              "flew-grow" property)
+-->
+
+</head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                  <ul>
+                    <li class="logo">logo</li>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                  </ul>
+                </nav>
+                <button>button</button>
+            </header>
+            <aside class="sidebar">
+                <h3>aside text</h3>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+            </aside>
+            <section class="main">
+                <h2>section heading</h2>
+                <p>section text</p>
+            </section>
+            <footer>
+                <h3>footer heading</h3>
+                <p>footer text</p>
+            </footer>
+        </div> <!-- /container -->
+    </body>
+</html>

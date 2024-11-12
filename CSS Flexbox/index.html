@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Shop Checkout</title>
+
+    <!-- Stylesheet -->
+     <link rel="stylesheet" href="stylesheet.css">
+
+<!-- source: https://wpengine.com/resources/combine-flexbox-and-css-grids-for-layouts-how-to/
+ 
+      determining the layout
+        - things are kind of grouped by "row" of the page it is in; 
+          essentially start from the top and working your way down
+            - header section with logo, nav items, button
+            - middle section with sidebar and main content section (as 
+              indicated by the "wrapper" section)
+            - footer with a heading and text
+        - sections within each wrapper container can be formatted 
+          independently of each other
+            - i.e. sidebar section vs the main section in the wrapper
+              (or middle) section of the page
+        - when applying flex styling, always start from the outside and
+          work your way in
+        - determine tasks to complete for each section in order to get the layout you want
+            - Create full width header and footer
+            - Position sidebar next to main content area
+            - Correct sizing of sidebar and main content area
+            - Navigation elements positioning
+-->
+
+</head>
+    <body>
+        <div class="container">
+        
+            <header>
+                <nav>
+                  <ul>
+                    <li class="logo">logo</li>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                  </ul>
+                </nav>
+                <button>button</button>
+            </header>
+            <div class="wrapper">
+                <aside class="sidebar">
+                    <h3>aside text</h3>
+                    <ul>
+                      <li>item 1</li>
+                      <li>item 2</li>
+                      <li>item 3</li>
+                    </ul>
+                </aside>
+                <section class="main">
+                    <h2>section heading</h2>
+                    <p>section text</p>
+                </section>
+            </div><!-- /wrapper -->
+            <footer>
+                <h3>footer heading</h3>
+                <p>footer text</p>
+            </footer>
+        </div> <!-- /container -->
+    </body>
+</html>
